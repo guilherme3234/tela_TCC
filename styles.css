@@ -1,108 +1,238 @@
+/* Estilos Globais */
 body {
     font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
     margin: 0;
     padding: 0;
-    background-color: #1a1a1a;
-    color: white;
 }
 
-.cabeçalho {
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+/* Cabeçalho */
+.cabecalho {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 30px;
-    background-color: #262626;
+    padding: 60px 60px;
+    background-color: #ffffff;
+    color: #333;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.conteúdo-cabeçalho {
-    display: flex;
-    max-width: 981px;
-    height: 156px;
-
+.conteudo-cabecalho {
+    max-width: 50%;
 }
 
-.cabeçalho h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.cabeçalho .destaque {
-    color: #e62e2e;
-}
-
-.cabeçalho p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.btn-cadastro {
-    padding: 10px 20px;
-    background-color: #e62e2e;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
-    border-radius: 5px;
-}
-
-.btn-cadastro:hover {
-    background-color: #c82626;
-}
-
-.imagem-cabeçalho img {
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-.serviços {
-    text-align: center;
-    padding: 50px 30px;
-}
-
-.serviços h2 {
-    font-size: 2rem;
-    margin-bottom: 40px;
-}
-
-.container-serviços {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.cartão-serviço {
-    background-color: #333;
-    padding: 20px;
-    width: 250px;
-    margin: 20px;
-    border-radius: 10px;
-    position: relative;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
-
-.cartão-serviço:hover {
-    transform: translateY(-10px);
-}
-
-.cartão-serviço h3 {
-    font-size: 1.2rem;
+.cabecalho h1 {
+    font-size: 40px;
     margin-bottom: 15px;
 }
 
-.cartão-serviço button {
-    padding: 10px 20px;
-    background-color: #e62e2e;
+
+.destaque {
+    
+    font-size: 45px;
+    color: #bd1010;
+}
+
+.cabecalho p {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.botao-cadastro {
+    padding: 12px 30px;
+    background-color: #B01818;
     color: white;
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    font-size: 10px;
+    transition: background-color 0.3s ease;
 }
 
-.cartão-serviço button:hover {
+.botao-cadastro:hover {
     background-color: #c82626;
+}
+
+.imagem-cabecalho img {
+    height: 300px;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.imagem-cabecalho {       /* Estilos para as setas de navegação */
+    position: relative;
+}
+
+.imagem-cabecalho .material-symbols-outlined {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px; /* Ajuste o tamanho da seta conforme necessário */
+    color: #333; /* Cor da seta, ajuste conforme necessário */
+    cursor: pointer;
+}
+
+.imagem-cabecalho .material-symbols-outlined.arrow_back_ios {
+    left: -40px; /* Ajuste a posição da seta à esquerda */
+}
+
+.imagem-cabecalho .material-symbols-outlined.arrow_forward_ios {
+    right: -40px; /* Ajuste a posição da seta à direita */
+}
+
+
+
+
+/* Seção de Serviços */
+.servicos {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.servicos h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.container-servicos {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.container-servicos img {
+    max-width: 250px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cartao-servico {
+    background-color: white;
+    padding: 20px;
+    width: 250px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.cartao-servico:hover {
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cartao-servico h3 {
+    font-size: 1.2rem;
+    margin: 15px 0;
+}
+
+.cartao-servico p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Seção de Salas */
+.salas {
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+.salas h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+}
+
+.grid-salas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 10px;
+}
+
+.cartao-sala {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.cartao-sala:hover {
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cartao-sala img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.cartao-sala p {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+/* Estilização da seção */
+.Salas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.Salas-text {
+    flex: 1; /* Ocupa o máximo possível de espaço */
+}
+
+.Salas-text p:first-child {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.Salas-text p:nth-child(2) {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.Salas-text p:last-child {
+    font-size: 16px;
+    color: #7A7A7A;
+}
+
+/* Estilização dos botões */
+.botoes-salas {
+    display: flex;
+    gap: 10px; /* Espaçamento entre os ícones */
+    flex-shrink: 0; /* Evita que os ícones sejam redimensionados */
+}
+
+.botoes-salas svg {
+    width: 60px;
+    height: 61px;
+    fill: #B01818;
+    cursor: pointer;
+    flex-shrink: 0; /* Garante que os ícones mantenham seu tamanho */
+}
+
+/* Opcional: Adiciona um efeito de hover nos ícones */
+.botoes-salas svg:hover {
+    opacity: 0.8;
 }
