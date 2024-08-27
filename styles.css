@@ -36,7 +36,7 @@ h1, h2 {
 .destaque {
     
     font-size: 45px;
-    color: #bd1010;
+    color: #B01818;
 }
 
 .cabecalho p {
@@ -56,12 +56,12 @@ h1, h2 {
 }
 
 .botao-cadastro:hover {
-    background-color: #c82626;
+    background-color: #B01818;
 }
 
 .imagem-cabecalho img {
-    height: 300px;
-    max-width: 500px;
+    height: 330x;
+    max-width: 350px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -187,8 +187,8 @@ h1, h2 {
     font-weight: bold;
 }
 
-
-/* Estilização da seção */
+/* --------------------------------------------------- */
+/* Estilo Geral para a Seção */
 .Salas {
     display: flex;
     justify-content: space-between;
@@ -196,43 +196,114 @@ h1, h2 {
     padding: 20px;
 }
 
-.Salas-text {
-    flex: 1; /* Ocupa o máximo possível de espaço */
-}
-
 .Salas-text p:first-child {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
-    color: #000000;
+    color: #000;
 }
 
 .Salas-text p:nth-child(2) {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: bold;
-    color: #000000;
+    color: #333;
 }
 
 .Salas-text p:last-child {
-    font-size: 16px;
-    color: #7A7A7A;
+    font-size: 14px;
+    color: #666;
 }
 
-/* Estilização dos botões */
+/* Estilo para os Botões */
 .botoes-salas {
     display: flex;
-    gap: 10px; /* Espaçamento entre os ícones */
-    flex-shrink: 0; /* Evita que os ícones sejam redimensionados */
+    gap: 15px;
 }
 
-.botoes-salas svg {
+.botao-sala {
     width: 60px;
-    height: 61px;
-    fill: #B01818;
+    height: 60px;
+    background-color: #B01818;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    flex-shrink: 0; /* Garante que os ícones mantenham seu tamanho */
+    transition: opacity 0.3s ease;
 }
 
-/* Opcional: Adiciona um efeito de hover nos ícones */
-.botoes-salas svg:hover {
+.botao-sala:hover {
     opacity: 0.8;
+}
+
+.botao-sala .material-symbols-outlined {
+    font-size: 28px;
+    color: #E8EAED;
+}
+
+/* --------------------------------------------------- */
+/* Container da grade */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Cartão de cada item */
+.item-card {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    transition: transform 0.3s ease;
+}
+
+.item-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Container da imagem */
+.image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: inherit;
+}
+
+/* Badge */
+.badge {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: #E63A3A;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 12px;
+}
+
+/* Informações do item */
+.item-info {
+    padding: 15px;
+    text-align: left;
+}
+
+.item-info h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.item-info p {
+    font-size: 14px;
+    color: #666;
+    margin: 2px 0;
 }
