@@ -220,8 +220,8 @@ h1, h2 {
 }
 
 .botao-sala {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 34px;
     background-color: #B01818;
     border-radius: 50%;
     display: flex;
