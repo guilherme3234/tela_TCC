@@ -1,4 +1,4 @@
-/* Estilos Globais */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
@@ -13,7 +13,7 @@ h1, h2 {
 }
 
 /* Cabeçalho */
-.cabecalho {
+.cabecalho-welcome {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,13 +29,13 @@ h1, h2 {
 
 .cabecalho h1 {
     font-size: 40px;
-    margin-bottom: 15px;
+    margin-bottom:30px;
 }
 
 
 .destaque {
     
-    font-size: 45px;
+    font-size: 35px;
     color: #B01818;
 }
 
@@ -51,7 +51,7 @@ h1, h2 {
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    font-size: 10px;
+    font-size: 15px;
     transition: background-color 0.3s ease;
 }
 
@@ -60,9 +60,10 @@ h1, h2 {
 }
 
 .imagem-cabecalho img {
-    height: 330x;
-    max-width: 350px;
+    height: 422;
+    max-width: 480px;
     border-radius: 10px;
+    
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -77,6 +78,7 @@ h1, h2 {
     font-size: 20px; /* Ajuste o tamanho da seta conforme necessário */
     color: #333; /* Cor da seta, ajuste conforme necessário */
     cursor: pointer;
+
 }
 
 .imagem-cabecalho .material-symbols-outlined.arrow_back_ios {
@@ -106,13 +108,13 @@ h1, h2 {
 .container-servicos {
     background-color: #ffffff;
     display: flex;
-    justify-content: center;
+    justify-content: center;    
     flex-wrap: wrap;
 }
 
 
 .container-servicos img {
-    max-width: 250px;
+    max-width: 280px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -220,7 +222,7 @@ h1, h2 {
 }
 
 .botao-sala {
-    width: 40px;
+    width: 33px;
     height: 34px;
     background-color: #B01818;
     border-radius: 50%;
@@ -240,8 +242,6 @@ h1, h2 {
     color: #E8EAED;
 }
 
-/* --------------------------------------------------- */
-/* Container da grade */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
